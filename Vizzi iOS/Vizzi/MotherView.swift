@@ -33,6 +33,10 @@ struct MotherView: View {
                                         case .Camera :
                                             CameraView()
                                                 .toolbar(.hidden)
+                                            
+                                        case .Reality :
+                                            RealityView()
+                                                .toolbar(.hidden)
 
                                         case .AudioSpaces :
                                             AudioSpacesView()
@@ -102,6 +106,8 @@ fileprivate struct TabsLayoutView: View {
             TabButton(tab: .Navigation, selectedTab: $selectedTab, namespace: namespace)
             Spacer()
             TabButton(tab: .Camera, selectedTab: $selectedTab, namespace: namespace)
+            Spacer()
+            TabButton(tab: .Reality, selectedTab: $selectedTab, namespace: namespace)
             Spacer()
             TabButton(tab: .AudioSpaces, selectedTab: $selectedTab, namespace: namespace)
             Spacer()

@@ -9,7 +9,7 @@ enum Tab: Int, Identifiable, CaseIterable, Comparable {
         lhs.rawValue < rhs.rawValue
     }
     
-    case Home, Navigation, Camera, AudioSpaces, Settings
+    case Home, Navigation, Camera, Reality, AudioSpaces, Settings
     
     internal var id: Int { rawValue }
     
@@ -20,6 +20,8 @@ enum Tab: Int, Identifiable, CaseIterable, Comparable {
         case .Navigation:
             return "map.fill"
         case .Camera:
+            return "camera.metering.center.weighted.average"
+        case .Reality:
             return "camera.viewfinder"
         case .AudioSpaces:
             return "waveform"

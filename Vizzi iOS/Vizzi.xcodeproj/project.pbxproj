@@ -18,6 +18,8 @@
 		2E689D0D2D51838200D4C7B2 /* CircleIconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E689D0C2D51838200D4C7B2 /* CircleIconLabel.swift */; };
 		2E689D2F2D51853800D4C7B2 /* FontSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E689D2E2D51853800D4C7B2 /* FontSystem.swift */; };
 		2E689D312D51856100D4C7B2 /* VisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E689D302D51856100D4C7B2 /* VisionViewModel.swift */; };
+		2E7EA1292D63DB02003D281B /* RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7EA1282D63DB02003D281B /* RealityView.swift */; };
+		2E7EA12B2D63DB51003D281B /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7EA12A2D63DB51003D281B /* ARViewModel.swift */; };
 		2EA362992D4765B000B970A9 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2EA362982D4765B000B970A9 /* Lottie */; };
 		2EA3629C2D47E5AF00B970A9 /* AudioSpacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3629B2D47E5AF00B970A9 /* AudioSpacesView.swift */; };
 		2EA3629E2D47F63B00B970A9 /* ActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3629D2D47F63B00B970A9 /* ActionViewModel.swift */; };
@@ -58,6 +60,8 @@
 		2E689D0C2D51838200D4C7B2 /* CircleIconLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIconLabel.swift; sourceTree = "<group>"; };
 		2E689D2E2D51853800D4C7B2 /* FontSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSystem.swift; sourceTree = "<group>"; };
 		2E689D302D51856100D4C7B2 /* VisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewModel.swift; sourceTree = "<group>"; };
+		2E7EA1282D63DB02003D281B /* RealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityView.swift; sourceTree = "<group>"; };
+		2E7EA12A2D63DB51003D281B /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 		2EA3629B2D47E5AF00B970A9 /* AudioSpacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpacesView.swift; sourceTree = "<group>"; };
 		2EA3629D2D47F63B00B970A9 /* ActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewModel.swift; sourceTree = "<group>"; };
 		2EA3629F2D48444700B970A9 /* AudioSpacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpacesViewModel.swift; sourceTree = "<group>"; };
@@ -126,6 +130,15 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
+		2E7EA1272D63DAF6003D281B /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				2E7EA1282D63DB02003D281B /* RealityView.swift */,
+				2E7EA12A2D63DB51003D281B /* ARViewModel.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
 		2EA3629A2D47E59B00B970A9 /* Audio Spaces */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,8 +181,8 @@
 				2EE93E352D4720710088CB24 /* AppDelegate.swift */,
 				2EE93E202D46DA9E0088CB24 /* SceneDelegate.swift */,
 				2EE93E372D4720910088CB24 /* AppManager.swift */,
-				2EE93E1E2D46DA9E0088CB24 /* CurrentUserViewModel.swift */,
 				2EE93E1F2D46DA9E0088CB24 /* MotherView.swift */,
+				2EE93E1E2D46DA9E0088CB24 /* CurrentUserViewModel.swift */,
 				2EE93E5B2D4724C60088CB24 /* AV */,
 				2EE93E512D47219C0088CB24 /* Onboarding */,
 				2EE93E482D4720B00088CB24 /* App */,
@@ -197,6 +210,7 @@
 		2EE93E482D4720B00088CB24 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				2E7EA1272D63DAF6003D281B /* AR */,
 				2E594C272D475F9F00E1D0A8 /* Components */,
 				2EE93E792D472BE60088CB24 /* Models */,
 				2EE93E5C2D4724D10088CB24 /* Home */,
@@ -350,6 +364,7 @@
 			files = (
 				2EA3629C2D47E5AF00B970A9 /* AudioSpacesView.swift in Sources */,
 				2E689D0B2D51836000D4C7B2 /* ImageUploadViewModel.swift in Sources */,
+				2E7EA1292D63DB02003D281B /* RealityView.swift in Sources */,
 				2EE93E272D46DA9E0088CB24 /* CurrentUserViewModel.swift in Sources */,
 				2EA3629E2D47F63B00B970A9 /* ActionViewModel.swift in Sources */,
 				2EE93E282D46DA9E0088CB24 /* MotherView.swift in Sources */,
@@ -380,6 +395,7 @@
 				2EE93E462D47209D0088CB24 /* CustomDateFormatter.swift in Sources */,
 				2EE93E4E2D47212D0088CB24 /* AVInputView.swift in Sources */,
 				2EE93E2A2D46DA9E0088CB24 /* SplashScreen.swift in Sources */,
+				2E7EA12B2D63DB51003D281B /* ARViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
